@@ -1,8 +1,8 @@
 {
     "basics": {
-        "name": "John Doe",
-        "label": "Programmer",
-        "picture": "",
+        "name": "Patricia Mayo Tejedor",
+        "label": "Developer",
+        "picture": "/profile.png",
         "email": "john.doe@mail.com",
         "phone": "(912) 555-4321",
         "website": "http://johndoe.com",
@@ -200,7 +200,7 @@
     },
     "resumeCustomization": {
         "imageHeader": {
-            "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp",
+            "url": "/background.jpg",
             "alt": "Default Banner"
         },
         "cardsOrder": [
