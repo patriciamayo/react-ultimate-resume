@@ -6,12 +6,12 @@
         "email": "john.doe@mail.com",
         "phone": "(912) 555-4321",
         "website": "http://johndoe.com",
-        "summary": "A summary of John Doe...",
+        "summary": "I am a 5 years experienced mobile developer, shifting towards full stack engineering. I am proactive, responsible, social and curious, with great expectations for the future. I am eager to learn and improve myself.",
         "location": {
             "address": "2712 Broadway St",
             "postalCode": "CA 94115",
-            "city": "San Francisco",
-            "countryCode": "US",
+            "city": "Canary Islands",
+            "countryCode": "ES",
             "region": "California"
         },
         "profiles": [
@@ -24,30 +24,22 @@
     },
     "work": [
         {
-            "name": "Company 2 ",
-            "position": "Worker",
-            "website": "http://company.com",
-            "startDate": "2014-01-01",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": ["Started the company"]
+            "name": "Just Eat",
+            "position": "Software Engineer",
+            "website": "https://flyt.io/",
+            "startDate": "2019-01-02",
+            "summary": "Starting working as a native frontend mobile developer (SwiftUI and Kotlin) and now shifting towards backend microservices (in GO using AWS)",
+            "location": "Remote",
+            "highlights": ["Started learning backend, making microservices in GO using AWS"]
         },
         {
-            "name": "What a nice office",
-            "position": "President",
-            "website": "http://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": ["Started the company"]
-        },
-        {
-            "name": "What a nice experience",
-            "position": "Lead dev",
-            "website": "http://company.com",
-            "summary": "Description...",
-            "location": "Paris, France",
+            "name": "IBM",
+            "position": "Mobile Developper",
+            "website": "https://www.ibm.com/",
+            "startDate": "2014-02-01",
+            "endDate": "2018-10-31",
+            "summary": "I developed mobile apps (with special focus on iOS using Swift) for IBM internal use within an Agile environment.  I've also had the opportunity to work with technologies such as Machine Learning, AI and the IBM Watson Visual Recognition platform. I lead numerous side projects, sometimes taking the role of Scrum Master. I was also part of the IoT focus area group, where we built occupancy sensors from scratch and integrated them into the room reservation system of IBM.",
+            "location": "Amsterdam",
             "highlights": ["Started the company"]
         }
     ],
@@ -100,62 +92,93 @@
     ],
     "skills": [
         {
-            "name": "Reactaaa",
-            "level": "Master",
+            "name": "Swift",
+            "level": "-",
             "value": 100,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "keywords": ["Swift", "iOS", "SwiftUI", "XCode"]
         },
         {
-            "name": "Angular",
-            "level": "Master",
-            "value": 80,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "name": "Android",
+            "level": "-",
+            "value": 50,
+            "keywords": ["Java", "Kotlin", "AndroidStudio"]
         },
         {
-            "name": "NodeJS",
-            "level": "Master",
+            "name": "IoT",
+            "level": "-",
+            "value": 50,
+            "keywords": ["MQTT", " NodeRED.js", "Arduino"]
+        },
+        {
+            "name": "GO",
+            "level": "-",
             "value": 40,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "keywords": ["Microservices", "AWS", "Kubernetes", "Docker", "Kafka"]
         },
         {
-            "name": "Firebase",
+            "name": "Web",
             "level": "Master",
-            "value": 60,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "value": 50,
+            "keywords": ["jQuery", "Node.js", "Jekyl", "PWA", "Webpack", "Vue.js"]
         },
         {
-            "name": "Gmail",
+            "name": "Code Control",
             "level": "Master",
-            "value": 20,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "K8S",
-            "level": "Master",
-            "value": 80,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "value": 90,
+            "keywords": ["Git", "UnitTesting", "Jenkins", "Lint", "Kibana", "NewRelic"]
         }
     ],
-    "languages": [{ "language": "English", "value": 100, "fluency": "Native speaker" }],
+    "languages": [
+        {
+            "index": 0,
+            "id": "53e5cb2c-50fe-4e4f-9214-8a4f447ead3d",
+            "language": "Spanish",
+            "value": 100
+        },
+        {
+            "language": "English",
+            "value": 100,
+            "fluency": "Native speaker",
+            "id": "4068df37-f448-4f8e-bcb5-ca97c967382c",
+            "index": 1
+        },
+        {
+            "index": 2,
+            "id": "9be135a7-f500-4a66-9f3f-a808d065de35",
+            "language": "French",
+            "value": 25
+        }
+    ],
     "interests": [
         {
-            "name": "Burritos",
-            "gifUrl": "https://media.giphy.com/media/d8WjGORtSEWqc/giphy.gif"
+            "name": "Traveling",
+            "gifUrl": "https://media.giphy.com/media/IzL667EYx01N8TXN9k/giphy.gif",
+            "id": "80efd379-7495-46a3-a0ea-301a4562d590",
+            "index": 0
         },
         {
             "name": "Dogs",
-            "gifUrl": "https://media.giphy.com/media/3o85xsGXVuYh8lM3EQ/giphy.gif"
+            "gifUrl": "https://media.giphy.com/media/ZNegC7wFpuQT7nurZ0/giphy.gif",
+            "id": "95ee27ea-2ac8-4c03-b474-7a5c33abccea",
+            "index": 1
         },
         {
-            "name": "Tendresse",
-            "gifUrl": "https://media.giphy.com/media/EehnUUCH2JcwU/giphy.gif"
+            "name": "Learning",
+            "gifUrl": "https://media.giphy.com/media/8dYmJ6Buo3lYY/giphy.gif",
+            "id": "3c2d5721-b383-4629-9e5c-d47e9975b0ed",
+            "index": 2
         },
         {
-            "name": "Something",
-            "gifUrl": "https://media.giphy.com/media/xTiTnIuKP1BLsMTerS/giphy.gif"
+            "name": "Hiking",
+            "gifUrl": "https://media.giphy.com/media/o5jbzlCnnwNb2/giphy.gif",
+            "id": "9707665d-be63-4ce5-903c-4208e30fd32f",
+            "index": 3
         },
         {
-            "name": "J'aime faire de la course à pied et des randonnées en famille le weekend."
+            "name": "Drawing",
+            "id": "d764eca6-66d5-45f3-ad39-ea162400a930",
+            "index": 4,
+            "gifUrl": "https://media.giphy.com/media/l2Je3PsPa0khkzwLm/giphy.gif"
         }
     ],
     "references": [{ "name": "Jane Doe", "reference": "Reference..." }],
@@ -194,14 +217,14 @@
             "experienceYears": 9
         },
         "sound": {
-            "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge"
+            "embedUrl": "https://open.spotify.com/embed/playlist/5ZgnTlYPLATJiTg9yTgppb"
         },
         "interestedBy": "Angular, la blochain et les chatons."
     },
     "resumeCustomization": {
         "imageHeader": {
             "url": "/background.jpg",
-            "alt": "Default Banner"
+            "alt": "Byron Beach"
         },
         "cardsOrder": [
             { "type": "basics", "variant": 4 },
