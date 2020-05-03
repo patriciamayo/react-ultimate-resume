@@ -8,18 +8,18 @@ import { existsAndNotEmpty } from '../../../utils/exists_and_not_empty';
 import { NoStudies } from './no_studies/no_studies';
 
 const Study = ({ study }) => {
-    const { endDate, area, studyType, institution } = study;
-    const title = institution;
+    const { endDate, area, studyType, institution, courses } = study;
+    const title = area;
     const body = useMemo(() => {
         const bodyParts = [];
         if (studyType) {
             bodyParts.push(studyType);
-            if (area) {
-                bodyParts.push(', ');
+            if (institution) {
+                bodyParts.push(' from ');
             }
         }
-        if (area) {
-            bodyParts.push(area);
+        if (institution) {
+            bodyParts.push(institution);
         }
 
         return bodyParts;
@@ -35,8 +35,12 @@ const Study = ({ study }) => {
     return (
         <ProfileCardSection>
             <ProfileCardSectionTitle>{title}</ProfileCardSectionTitle>
-            <ProfileCardSectionSubtitle>{body}</ProfileCardSectionSubtitle>
-            {date && <ProfileCardSectionText>{date}</ProfileCardSectionText>}
+            <ProfileCardSectionSubtitle>
+                {body}
+                {date && `, ${date}`}
+            </ProfileCardSectionSubtitle>
+            <br />
+            <ProfileCardSectionText>{courses.join(', ')}</ProfileCardSectionText>
         </ProfileCardSection>
     );
 };

@@ -55,22 +55,31 @@
     ],
     "education": [
         {
-            "institution": "ISEN",
-            "area": "Software Development",
-            "studyType": "Engineer Degree",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
+            "institution": "UNED",
+            "area": "Advanced AI",
+            "studyType": "Master",
+            "startDate": "2016-09-01",
+            "endDate": "2018-09-15",
             "gpa": "4.0",
-            "courses": ["DB1101 - Basic SQL"]
+            "courses": ["Machine Learning",  "Artificial Vision", "Perceptual and Autonomous Robotics", "Artificial Intelligence Applications for Human and Sustainable Development","Text Information Discovery"]
         },
         {
-            "institution": "Université d'artois",
-            "area": "",
-            "studyType": "",
-            "startDate": "2011-01-01",
-            "endDate": "",
+            "institution": "URJC",
+            "area": "Computer Science",
+            "studyType": "Bachelor",
+            "startDate": "2010-09-01",
+            "endDate": "2015-06-30",
             "gpa": "4.0",
-            "courses": ["DB1101 - Basic SQL"]
+            "courses": ["Software Engineering", "Databases", "Software Architecture", "Design and Analysis of Algorithms", "Security", "HumanComputer Interaction"]
+        },
+        {
+            "institution": "URJC",
+            "area": " Business Management and Administration",
+            "studyType": "Bachelor",
+            "startDate": "2010-09-01",
+            "endDate": "2015-06-30",
+            "gpa": "4.0",
+            "courses": [" Business Strategy", "Marketing Management", "Commercial Management", "Financial Mathematics", "Accounting", "Economics"]
         }
     ],
     "awards": [
