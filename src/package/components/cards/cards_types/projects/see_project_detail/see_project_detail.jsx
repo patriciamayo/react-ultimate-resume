@@ -36,7 +36,7 @@ const SeeProjectDetailComponent = ({ color, project }) => {
                 {!isEditing && <EyeIcon className={classes.icon} />}
                 {isEditing && <EditIcon className={classes.fillIcon} />}
                 <Typography customClasses={{ container: classes.detailTypography }} color="primary">
-                    {!isEditing && <FormattedMessage id="Projects.details.seemore" defaultMessage="See more" />}
+                    {/* {!isEditing && <FormattedMessage id="Projects.details.seemore" defaultMessage="See more" />} */}
                     {isEditing && <FormattedMessage id="Main.lang.edit" defaultMessage="Edit" />}
                 </Typography>
             </AnimatedUnderlinedButton>

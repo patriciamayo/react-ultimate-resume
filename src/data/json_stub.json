@@ -91,12 +91,69 @@
         }
     ],
     "publications": [
+        
         {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "website": "http://publication.com",
-            "summary": "Description..."
+            "name": "A trip to the Science Fair",
+            "publisher": "IBM",
+            "releaseDate": "2017-03-10",
+            "website": "https://www.ibm.com/blogs/think/nl-en/2017/03/10/science-fair/",
+            "link": "https://www.ibm.com/blogs/think/nl-en/2017/03/10/science-fair/",
+            "summary": "Best way to prepare for the future is to create it, learn as much as possible, be curious and put your thoughts into action",
+            "description": "Best way to prepare for the future is to create it, learn as much as possible, be curious and put your thoughts into action"
+        },
+        {
+            "name": "Tech Girl of the Month",
+            "publisher": "Tech Girl",
+            "releaseDate": "2018-08-20",
+            "website": "https://www.techgirl.nl/patricia-mayo-tejedor-wij-zijn-de-mensen-die-de-toekomst-moeten-creeren/",
+            "link": "https://www.techgirl.nl/patricia-mayo-tejedor-wij-zijn-de-mensen-die-de-toekomst-moeten-creeren//",
+            "summary": "If you have the right people around you, people who care about you and who are better than you, you can really get the most out of yourself",
+            "description": "If you have the right people around you, people who care about you and who are better than you, you can really get the most out of yourself"
+        },
+        {
+            "name": "A Developer’s Month as an Illustrator",
+            "publisher": "Self publish in Medium",
+            "releaseDate": "2019-01-19",
+            "website": "https://medium.com/learning-lab/a-developers-month-as-an-illustrator-718aaea90233",
+            "link": "https://medium.com/learning-lab/a-developers-month-as-an-illustrator-718aaea90233",
+            "summary": "9 steps guide to become a professional designer in just 1 month",
+            "description": "9 steps guide to become a professional designer in just 1 month"
+        },
+        {
+            "name": "Tradivegan",
+            "publisher": "Self publish in Medium",
+            "releaseDate": "2019-05-19",
+            "website": "https://www.ibm.com/blogs/think/nl-en/2017/03/10/science-fair/",
+            "link": "https://www.ibm.com/blogs/think/nl-en/2017/03/10/science-fair/",
+            "summary": "Tradivegan, solving the problem of vegan dishes. Are modern vegan dishes missing something essential? How does it feel eating a vegan hot dog?",
+            "description": "Tradivegan, solving the problem of vegan dishes. Are modern vegan dishes missing something essential? How does it feel eating a vegan hot dog?"
+        },
+        {
+            "name": "Bring Clarity into Your Own Existence",
+            "publisher": "Self publish in Medium",
+            "releaseDate": "2019-09-02",
+            "website": "https://medium.com/learning-lab/bring-clarity-into-your-own-existence-d0d6c3fbaba5",
+            "link": "https://medium.com/learning-lab/bring-clarity-into-your-own-existence-d0d6c3fbaba5",
+            "summary": "Having a Philosophy of Life will give you clarity when confronting problems, mundane or abstract, and it will help you make sense of the world and your own existence. Without a personal philosophy, we end up living without direction.",
+            "description": "Having a Philosophy of Life will give you clarity when confronting problems, mundane or abstract, and it will help you make sense of the world and your own existence. Without a personal philosophy, we end up living without direction."
+        },
+        {
+            "name": "Just a reminder: You Are Free",
+            "publisher": "Self publish in Medium",
+            "releaseDate": "2019-09-02",
+            "website": "https://medium.com/learning-lab/just-a-reminder-you-are-free-6a9f3f42b354",
+            "link": "https://medium.com/learning-lab/just-a-reminder-you-are-free-6a9f3f42b354",
+            "summary": "There are always choices to make and the only thing you need is to be aware of this fact",
+            "description": "There are always choices to make and the only thing you need is to be aware of this fact"
+        },
+        {
+            "name": "What on Earth is Happiness?",
+            "publisher": "Self publish in Medium",
+            "releaseDate": "2019-09-02",
+            "website": "https://medium.com/learning-lab/what-on-earth-is-happiness-ce6d70333660",
+            "link": "https://medium.com/learning-lab/what-on-earth-is-happiness-ce6d70333660",
+            "summary": "Happiness cannot be pursued. Every person must have a reason to 'be happy'",
+            "description": "Happiness cannot be pursued. Every person must have a reason to 'be happy'"
         }
     ],
     "skills": [
@@ -196,6 +253,11 @@
             "name": "Développement d'un serpent connecté",
             "description": "Et oui, vous avez bien entendu !\nUn serpent connecté, c'est comme une montre connectée, mais en serpent, en fait ça ressemble pas une montre, mais ça reste connecté 🚀",
             "images": []
+        },
+        {
+            "name": "Développement d'un serpent connecté",
+            "description": "Et oui, vous avez bien entendu !\nUn serpent connecté, c'est comme une montre connectée, mais en serpent, en fait ça ressemble pas une montre, mais ça reste connecté 🚀",
+            "images": []
         }
     ],
     "specific": {
@@ -228,7 +290,7 @@
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/5ZgnTlYPLATJiTg9yTgppb"
         },
-        "interestedBy": "Angular, la blochain et les chatons."
+        "interestedBy": "Ecology, Technology, Design and Startups."
     },
     "resumeCustomization": {
         "imageHeader": {
@@ -237,9 +299,8 @@
         },
         "cardsOrder": [
             { "type": "basics", "variant": 4 },
-            { "type": "projects", "variant": 4 },
+            { "type": "publications", "variant": 4 },
             { "type": "skills", "variant": 0 },
-            { "type": "dreamjob", "variant": 4 },
             { "type": "experiences", "variant": 4 },
             { "type": "studies", "variant": 4 },
             { "type": "gifs", "variant": 0 },

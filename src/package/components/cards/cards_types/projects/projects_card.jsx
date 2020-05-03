@@ -5,16 +5,25 @@ import { ProjectsBack } from './projects_back/projects_back';
 import { AddButton } from './add_button_rounded/add_button_rounded';
 import { ProjectDialog } from './project_dialog/project_dialog';
 
-import { mapProjectsFromJsonResume } from './data/mapping';
+import { mapProjectsFromJsonResume, mapPublicationsFromJsonResume } from './data/mapping';
 import { DeveloperProfileContext } from '../../../../utils/context/contexts';
 import { validateProjectsComplete } from './data/validator';
 import { SIDES } from '../../../commons/profile_card/profile_card_side/side';
 import { useMode } from '../../../hooks/use_mode';
 
-const ProjectsCardComponent = ({ variant, side }) => {
+const ProjectsCardComponent = ({ variant, side, type }) => {
+    console.log(type);
     const [mode] = useMode();
     const { data, isEditing } = useContext(DeveloperProfileContext);
-    const mappedData = useMemo(() => mapProjectsFromJsonResume(data), [data]);
+
+    let mappedObject;
+    if (type === 'publications') {
+        mappedObject = mapPublicationsFromJsonResume(data);
+    } else {
+        mappedObject = mapProjectsFromJsonResume(data);
+    }
+
+    const mappedData = useMemo(() => mappedObject, [data]);
 
     const isComplete = useMemo(() => validateProjectsComplete(mappedData), [mappedData]);
 
@@ -30,7 +39,7 @@ const ProjectsCardComponent = ({ variant, side }) => {
     }
     return (
         <ProfileCard
-            kind="projects"
+            kind="blogs"
             data={mappedData}
             isComplete={isComplete}
             isEditingProfile={isEditing}

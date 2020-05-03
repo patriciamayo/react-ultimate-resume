@@ -11,6 +11,16 @@ export const mapProjectsFromJsonResume = (jsonResume) => ({
     }))
 });
 
+export const mapPublicationsFromJsonResume = (jsonResume) => ({
+    projects: jsonResume?.publications?.map((publication, index) => ({
+        ...publication,
+        // generating uuid for manipulating data if not present
+        id: publication.id || uuid(),
+        date: publication.endDate && moment(publication.endDate, 'YYYY-MM-DD'),
+        index: publication.index || index
+    }))
+});
+
 export const mapProjectToJsonResume = (project) => ({
     ...project,
     id: project.id || uuid(),
