@@ -23,13 +23,13 @@ const ProjectsBackComponent = ({ data, handleAddButtonClick }) => {
     const classes = useStyles({ variant });
 
     const imageSrc = useMemo(() => data.projects?.[0]?.images?.url ?? DEFAULT_PROJECT_IMAGE, [
-        data.projects?.[0]?.images
+        data.images
     ]);
     const alt = data.projects?.[0]?.title;
 
     const handleProjectDeletion = useCallback(
         (index) => {
-            const newProjects = [...data.projects];
+            const newProjects = [...data];
             newProjects.splice(index, 1);
             onEdit({ projects: newProjects });
         },
@@ -53,10 +53,8 @@ const ProjectsBackComponent = ({ data, handleAddButtonClick }) => {
                 <FormattedMessage id="Projects.back.title" defaultMessage="Projects" />
             </ProfileCardTitle>
             <ProfileCardContent>
-                {data.projects?.map((project) => (
-                    <ProjectSection project={project} key={`project_${project.id}`} onDelete={handleProjectDeletion} />
-                ))}
-                {!existsAndNotEmpty(data?.projects) && <NoProject handleAddButtonClick={handleAddButtonClick} />}
+                <ProjectSection project={data} key={`project_${data.id}`} onDelete={handleProjectDeletion} />
+                {!existsAndNotEmpty(data) && <NoProject handleAddButtonClick={handleAddButtonClick} />}
             </ProfileCardContent>
         </>
     );

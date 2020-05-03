@@ -29,23 +29,27 @@ const ProjectsCardComponent = ({ variant, side }) => {
         return null;
     }
     return (
-        <ProfileCard
-            kind="projects"
-            data={mappedData}
-            isComplete={isComplete}
-            isEditingProfile={isEditing}
-            sides={{
-                front: (props) => <ProjectsFront {...props} />,
-                back: (props) => <ProjectsBack {...props} />
-            }}
-            variant={variant}
-            side={currentSide}
-            customEditAction={(props) => <AddButton title="Ajouter un projet" {...props} />}
-            editDialog={{
-                component: ProjectDialog,
-                data: {}
-            }}
-        />
+        <div>
+            {mappedData.projects?.map((project) => (
+                <ProfileCard
+                    kind="blogs"
+                    data={project}
+                    isComplete={isComplete}
+                    isEditingProfile={isEditing}
+                    sides={{
+                        front: (props) => <ProjectsFront {...props} />,
+                        back: (props) => <ProjectsBack {...props} />
+                    }}
+                    variant={variant}
+                    side={currentSide}
+                    customEditAction={(props) => <AddButton title="Ajouter un projet" {...props} />}
+                    editDialog={{
+                        component: ProjectDialog,
+                        data: {}
+                    }}
+                />
+            ))}
+        </div>
     );
 };
 
