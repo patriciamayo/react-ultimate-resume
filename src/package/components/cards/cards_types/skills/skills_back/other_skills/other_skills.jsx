@@ -39,6 +39,7 @@ const OtherSkills = ({ style, othersSkills, springTranslationProps: { yt } }) =>
                     color={color}
                     value={skill.value}
                     name={skill.name}
+                    keywords={skill.keywords.join(', ')}
                 />
             ))}
         </animated.div>
